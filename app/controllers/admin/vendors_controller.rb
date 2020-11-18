@@ -30,6 +30,8 @@ class Admin::VendorsController < Admin::BaseController
   end
   
   def destroy
+    @vendor.destroy
+    redirect_to admin_vendors_path, notice: "廠商已刪除"
   end
 
   private
