@@ -9,4 +9,10 @@ Rails.application.routes.draw do
     resources :products, excpet: [:show]
     resources :vendors, excpet: [:show]
   end
+
+  namespace :api do
+    namespace :v1 do
+      post "subscribe", to: "utils#subscribe"
+    end
+  end
 end
