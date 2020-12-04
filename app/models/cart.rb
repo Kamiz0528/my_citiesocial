@@ -38,6 +38,6 @@ class Cart
   end
 
   def total_price
-    @items.reduce(0) { |sum, item| sum = sum + item.total_price }
+    @items.reduce(0) { |sum, item| sum + item.total_price }
   end
 end
