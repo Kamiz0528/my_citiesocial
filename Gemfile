@@ -66,4 +66,5 @@ group :development, :test do
   gem 'faker', '~> 2.11'
   gem 'pry-rails', '~> 0.3.9'
   gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
+  gem 'aasm', '~> 5.1', '>= 5.1.1'
 end
