@@ -5,6 +5,3 @@ FactoryBot.define do
     online { true }
   end
 end
-
-FactoryBot.create(:vendor)
-FactoryBot.build(:vendor)
